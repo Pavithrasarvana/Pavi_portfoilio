@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<!-- Created By CodingNepal -->
+<!-- Updated Portfolio for Pavithra Saravana Perumal -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pavi Portfolio </title>
-    <link rel="icon" type="image/x-icon" href="/images/lo.ico">
+    <title>Pavi Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="images/lo.ico">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -13,13 +13,59 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
-
+    <style>
+      /* WhatsApp floating button */
+      .whatsapp-float {
+        position: fixed;
+        right: 25px;
+        bottom: 85px; /* Increased from 25px to 85px for more height above scroll button */
+        z-index: 99999;
+        background: #25D366;
+        color: #fff;
+        border-radius: 50%;
+        width: 56px;
+        height: 56px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 32px;
+        transition: background 0.2s;
+        cursor: pointer;
+      }
+      .whatsapp-float:hover {
+        background: #128C7E;
+      }
+      .whatsapp-float .tooltip {
+        position: absolute;
+        right: 70px;
+        bottom: 10px;
+        background: #25D366;
+        color: #fff;
+        padding: 4px 10px;
+        border-radius: 6px;
+        font-size: 14px;
+        white-space: nowrap;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.2s;
+      }
+      .whatsapp-float:hover .tooltip {
+        opacity: 1;
+      }
+    </style>
 </head>
-<body oncontextmenu="return false">
+<body>
     <div class="scroll-up-btn">
         <i class="fas fa-angle-up"></i>
     </div>
-    <nav class="navbar">
+   <!-- WhatsApp floating button (bottom right corner, higher above scroll-up) -->
+   <a href="https://wa.me/918610726768" class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
+   <i class="fab fa-whatsapp"></i>
+   <span class="tooltip">Message on WhatsApp</span>
+   </a>
+
+   <nav class="navbar">
         <div class="max-width">
             <div class="logo"><a href="#">Portfo<span>lio.</span></a></div>
             <ul class="menu">
@@ -28,7 +74,7 @@
                 <li><a href="#services" class="menu-btn">Services</a></li>
                 <li><a href="#skills" class="menu-btn">Skills</a></li>
                 <li><a href="#teams" class="menu-btn">Achievements</a></li>
-                <li><a href="#portolio" class="menu-btn">portolio</a></li>
+                <li><a href="#portolio" class="menu-btn">Portfolio</a></li>
                 <li><a href="#contact" class="menu-btn">Contact</a></li>
             </ul>
             <div class="menu-btn">
@@ -55,171 +101,156 @@
             <h2 class="title">About me</h2>
             <div class="about-content">
                 <div class="column left">
-                    <img src="images/profile-1.png" alt="">
+                    <img src="images/profile-1.png" alt="profile">
                 </div>
                 <div class="column right">
                     <div class="text">I'm Pavithra and I'm a <span class="typing-2"></span></div>
-                    <p>I am a driven and ambitious fresher with a background in technical support engineering and a strong interest in development. I graduated from Electronics and Communication Engineering with an impressive 84% score. I also have a diploma in a related field, with a notable 82% score. I am proficient in IOT remote access product configuration and installation, and I have a deep understanding of the intricacies involved. Additionally, I am passionate about acquiring skills in UI/UX designing using Figma and Android app development. I possess a keen eye for detail and a creative mindset, and I strive to create visually captivating and user-friendly interfaces. I am committed to continuous learning and staying updated with industry trends. I am eager to utilize my technical support experience and contribute to the development of innovative and immersive solutions.
+                    <p>
+                        I am an enthusiastic HR and aspiring Business Analyst with a strong technical foundation in web development and digital design. My background in Electronics & Communication Engineering, combined with hands-on experience in technical support, web development, and creative media, allows me to bridge the gap between people, process, and technology. Currently, I am building my expertise in HR operations, recruitment, and business analysis to drive organizational success and foster positive workplace experiences.
                     </p>
-                    <a href="/images/pavi_resume.pdf" download>Download CV</a>
+                    <a href="images/pavi_resume.pdf" download>Download CV</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- services section start -->
+
+    <!-- services section start (UPDATED) -->
     <section class="services" id="services">
         <div class="max-width">
             <h2 class="title">My services</h2>
             <div class="serv-content">
+                <!-- Service 1: Project & Website Development -->
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-laptop-code"></i>
+                        <div class="text">Project & Website Development</div><br><br>
+                        <p>
+                            I specialize in designing and developing responsive websites and project dashboards tailored for businesses, organizations, and individuals. My work includes:<br>
+                            - Business websites<br>
+                            - Student Information Systems<br>
+                            - IoT Garbage Monitoring Systems<br>
+                            - Android apps for remote control and monitoring<br><br>
+                            <b>Previous Projects:</b><br>
+                            • Sewage Treatment Plant dashboard (EWOn automation, Viewon remote control)<br>
+                            • BMS for Bluestar ACs (energy monitoring, SMS alerts)<br>
+                            • OEE Production Dashboard for manufacturing<br>
+                            • Website launch for Nutrikernals (GoDaddy platform)<br>
+                            • Student Information System (HTML, CSS)<br>
+                            • Android Application for CMOS Processor & Ecatcher App clone<br>
+                        </p>
+                    </div>
+                </div>
+                <!-- Service 2: Brochure & Digital Marketing Material Design -->
                 <div class="card">
                     <div class="box">
                         <i class="fas fa-paint-brush"></i>
-                        <div class="text">Dashboard Developer</div><br><br>
-                        <p>A dashboard for a sewage treatment plant with a capacity of 500 MLD. The dashboard automates the entire process using EWOn tags and allows users to control the process remotely through the Viewon screen.<br><br>
-                            A BMS (building management system) for a college that uses Bluestar ACs. The BMS maintains accurate temperature and calculates energy meter readings. It also sends an SMS to the concerned person whenever there is a power cut.<br><br>
-                            A production dashboard for a manufacturing company that calculates OEE (Overall Equipment Effectiveness).<br><br>
-                            An energy monitoring system for an office that monitors the load of the ACs and calculates the monthly readings. It also logs the data in CSV format and sends an email and SMS whenever the current is off and the generator is switched on.</p>
+                        <div class="text">Brochure & Digital Marketing Material Design</div><br><br>
+                        <p>
+                            I create visually appealing brochures, posters, and digital marketing materials to help businesses stand out and effectively communicate their brand. My expertise includes:<br>
+                            - Business and product brochures (print & digital)<br>
+                            - Event and promotional posters<br>
+                            - Custom graphics for social media and digital ads<br><br>
+                            Tools: Canva, Figma, Photoshop, Google Sites<br>
+                            <b>Notable Works:</b><br>
+                            • Beauty parlour digital brochure<br>
+                            • Branding for local businesses and startups<br>
+                        </p>
                     </div>
                 </div>
+                <!-- Service 3: Branding & Analytics (Business/HR Analyst) -->
                 <div class="card">
                     <div class="box">
                         <i class="fas fa-chart-line"></i>
-                        <div class="text">Advertising</div><br><br>
-                        <p>I have a strong track record of creating effective marketing materials for businesses. <br><br> 
-                        I have created banners and posters that have helped businesses to increase brand awareness and generate leads.<br><br> I have also created webpages that have helped businesses to improve 
-                        their online presence and attract new customers.In addition, I am a skilled web designer and dashboard developer.<br> <br>I have used Google Sites and GoDaddy Website Builder to create websites and dashboards that are both informative and visually appealing. <br><br>I am confident that I can use my skills and experience to help your business achieve its marketing goals.
+                        <div class="text">Branding & Analytics (Business/HR Analyst)</div><br><br>
+                        <p>
+                            I'm actively learning and practicing business analytics and HR analytics to support organizational growth and branding:<br>
+                            - Brand identity design and strategy for businesses<br>
+                            - Data analytics for business insights (Power BI, Excel)<br>
+                            - HR analytics: recruitment metrics, employee engagement, onboarding analysis<br>
+                            - Process mapping & business documentation<br><br>
+                            <b>Learning & Practice:</b><br>
+                            • Hands-on with Power BI and Excel for dashboard/reporting<br>
+                            • HR processes: recruitment, onboarding, data tracking<br>
+                            • Real-world projects in analytics and branding as part of my growth as a Business Analyst & HR Analyst<br>
                         </p>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="box">
-                        <i class="fas fa-code"></i>
-                        <div class="text"> Andriod Application/Webpage Developed <br><br>
-                        </div>
-                        <p>create an Android app that will give you remote control over a LED bulb using Ewon Tags. The app can use the M2Web API or the Ewon Tags SDK to communicate with the Ewon Tags.
-            <br><br>
-            Develop two projects using HTML, CSS, and JavaScript.The first project is an IoT Garbage Monitoring System that will have three user controls: driver, user, and public. The driver will be able to track the details of the consumer address and how much load of waste needs to be dropped every day. The user will be able to track the garbage collection schedule for their area. The public will be able to see the overall status of the garbage collection system. The website will also generate a report for one month.<br><br>
-
-            The second project is a Student Information System that will have a simple user interface that allows students to get information about the degrees available. The application will also have a login system so that students can track their progress
-                        </p>
-                    </div>
-                </div>
-               </div>
             </div>
         </div>
     </section>
 
-    <!-- skills section start -->
-    <section class="skills" id="skills">
-        <div class="max-width">
-            <h2 class="title">My skills</h2>
-            <div class="skills-content">
-                <div class="column left">
-                    <div class="text">My creative skills & experiences.</div> <br>
-                    <p> <b>QC Testing of voice announcers:</b> Demonstrated strong attention to detail and ability to identify and troubleshoot problems.<br><br>
-                        <b>Invoice, DC and Record Maintenance:</b>Proven ability to manage and maintain complex records.<br><br>
-                        <b>SD card voice file modification & Program Fusing:</b> Demonstrated creativity and problem-solving skills in modifying and fusing voice files.<br><br>
-                        <b>Cabling Work:</b> Demonstrated ability to work independently and as part of a team.<br><br>
-                        <b>In-process Gauge PC Board Assembling:</b> Demonstrated ability to follow instructions and assemble complex components.<br><br>
-                        <b>Pneumatic and Hydraulic Gauge Calibration Record Maintenance:</b> Proven ability to maintain accurate records. <br><br>
-                        <b>Demonstration and Training Given to Customer:</b> Demonstrated strong communication and presentation skills.<br><br>
-                        <b>Program Develop for Push Data to Third Party Cloud and MSSQL using MQTT or HTTP Protocol:</b> Demonstrated ability to develop complex programs.<br><br>
-                        <b>PLC/HMI Device Communicate with Ewon and Log the Historical Data and Store in FTP Server as CSV/Text: </b>Demonstrated ability to work with complex systems. <br><br>
-                        <b>Develop the Stack in BASIC IDE and JAVA using ETK Library and also Dashboard using VIewon Software & HTML, CSS and JS:</b> Demonstrated strong programming skills.</p><br><br>
-                    <a href="#">Read more</a>
+<!-- skills section start -->
+<section class="skills" id="skills">
+    <div class="max-width">
+        <h2 class="title">My skills</h2>
+        <div class="skills-content">
+            <div class="column left">
+                <div class="text">Key Technical Strengths & Experience</div><br> 
+                <p>
+                    <b>IoT & Automation:</b><br>
+                    - Remote access product configuration (Ewon, Anybus, IXXAT)<br>
+                    - Dashboard development for industrial automation (Viewon, BMS, OEE systems)<br>
+                    - Experience in PLC, HMI integration and troubleshooting<br>
+                    <br>
+                    <b>Web Development:</b><br>
+                    - Responsive websites and dashboards (HTML, CSS, JavaScript)<br>
+                    - UI/UX design using Figma, Canva, and Google Sites<br>
+                    <br>
+                    <b>Microsoft Office & Power BI:</b><br>
+                    - Advanced Excel (data analysis, reporting)<br>
+                    - Power BI dashboard creation & visualization<br>
+                    - PowerPoint, Access, Word for business documentation<br>
+                    <br>
+                    <b>SQL & Data Management:</b><br>
+                    - SQL (MSSQL for data storage & analytics)<br>
+                    <br>
+                    <b>Brochure & Poster Design:</b><br>
+                    - Creative design for business, events, and social media<br>
+                    - Proficient in Canva, Figma, and other modern design tools<br>
+                </p>
+                <a href="#">Read more</a>
+            </div>
+            <div class="column right">
+                <div class="bars">
+                    <div class="info">
+                        <span>IoT & Automation</span>
+                        <span>95%</span>
+                    </div>
+                    <div class="line IOT"></div>
                 </div>
-                <div class="column right">
-                    <div class="bars">
-                        <div class="info">
-                            <span>HTML</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="line html"></div>
+                <div class="bars">
+                    <div class="info">
+                        <span>Website Development</span>
+                        <span>90%</span>
                     </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>CSS</span>
-                            <span>60%</span>
-                        </div>
-                        <div class="line css"></div>
+                    <div class="line html"></div>
+                </div>
+                <div class="bars">
+                    <div class="info">
+                        <span>Microsoft Office Suite & Power BI</span>
+                        <span>90%</span>
                     </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>JavaScript</span>
-                            <span>50%</span>
-                        </div>
-                        <div class="line js"></div>
+                    <div class="line ms"></div>
+                </div>
+                <div class="bars">
+                    <div class="info">
+                        <span>SQL (MSSQL)</span>
+                        <span>80%</span>
                     </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>JAVA(JRE and EDK lib)</span>
-                            <span>75%</span>
-                        </div>
-                        <div class="line JAVA"></div>
+                    <div class="line sqljava"></div>
+                </div>
+                <div class="bars">
+                    <div class="info">
+                        <span>Brochure & Poster Design</span>
+                        <span>90%</span>
                     </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>MSSQL</span>
-                            <span>70%</span>
-                        </div>
-                        <div class="line mssql"></div>
-                    </div>
-
-                    <div class="bars">
-                        <div class="info">
-                            <span>microsoft Office Suite(Excel,Access,Powerpoint,power BI..)</span>
-                            <span>85%</span>
-                        </div>
-                        <div class="line microsoftOfficeSuite"></div>
-                    </div>
-
-                    <div class="bars">
-                        <div class="info">
-                            <span>Node js ,SQL and PHP</span>
-                            <span>50%</span>
-                        </div>
-                        <div class="line SQL "></div>
-                    </div>
-
-                    <div class="bars">
-                        <div class="info">
-                            <span>Azure/aws IOT cloud configuration.</span>
-                            <span>70%</span>
-                        </div>
-                        <div class="line awsconfiguration"></div>
-                    </div>
-
-                    <div class="bars">
-                        <div class="info">
-                            <span>PLC , HMI configuration and Troubleshoot  </span>
-                            <span>65%</span>
-                        </div>
-                        <div class="line PLCTroubleshoot"></div>
-                    </div>
-
-                    <div class="bars">
-                        <div class="info">
-                            <span>SW - Andriod, Xilinx ISE,Eclipse,Vscode, arduino, figma,canva,wordpress
-                                .</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="line SW"></div>
-                    </div>
-
-                    <div class="bars">
-                        <div class="info">
-                            <span>IOT Remote Access product
-                                .</span>
-                            <span>95%</span>
-                        </div>
-                        <div class="line IOT"></div>
-                    </div>
-
+                    <div class="line brochure"></div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- teams section start -->
     <section class="teams" id="teams">
@@ -228,7 +259,7 @@
             <div class="carousel owl-carousel">
                 <div class="card">
                     <div class="box">
-                        <img src="images/profile-2.png" alt="">
+                        <img src="images/profile-6.png" alt="state ">
                         <div class="text">STATE LEVEL PROJECT - COMPETITION (03/2019)</div>
                         <p>won the 1st prize in Anver2k19, conducted by KCG College of Technology, Karapakkam for their garbage monitoring system. 
                             The system uses sensors to detect when a bin is full and then automatically sends a message to the concerned person. 
@@ -239,28 +270,36 @@
                 </div>
                 <div class="card">
                     <div class="box">
-                        <img src="images/profile-6.png" alt="">
+                        <img src="images/profile-6.png" alt="national">
                         <div class="text">NATIONAL LEVEL COMPETITION (11/2019)</div>
                         <p>WON 1st PRIZE IN GESTURE CONTROL ROBOTICS CONDUCTED BY ROBOTICS DEPT IN MPC</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
-                        <img src="images/profile-3.jpeg" alt="">
+                        <img src="images/profile-3.jpeg" alt="NPTEL">
                         <div class="text">NPTEL Online Certification Jan - Apr 2023</div>
                         <p>Introduction to Internet Of Things</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
-                        <img src="images/profile-4.jpeg" alt="">
+                        <img src="images/profile-4.jpeg" alt="hyperlink">
                         <div class="text">HYPERLINK-10/2022</div>
                         <p>won the 3rd prize in Software Expo Organised By Association of Engineers conducted by GKM College for their SIS project. The project was a student information system that was created using HTML and CSS only.</p>
                     </div>
                 </div>
+               <div class="card">
+                    <div class="box">
+                        <img src="images/profile-7.png" alt="TATA">
+                        <div class="text">Tata Group - Data Analytics Job Simulation </div>
+                        <p>Successfully completed the Data Analytics Job Simulation Program with Tata Group on Forage.
+                        </p>
+                    </div>
+                </div>
                 <div class="card">
                     <div class="box">
-                        <img src="images/profile-5.jpeg" alt="">
+                        <img src="images/profile-5.jpeg" alt="ANYBUS">
                         <div class="text">Certification of Completion </div>
                         <p>I completed hands-on training and test for technical support engineer for Anybus, Ewon Remote, and IXXAT products in May 2022.
                         </p>
@@ -270,286 +309,295 @@
         </div>
     </section>
 
- 
-
-  <!-- Gallery section start -->
+ <!-- Gallery section start -->
   <section class="portolio" id="portolio">
     <div class="max-width">
-        <h2 class="title">Web Development Projects</h2>
+        <h2 class="title">Web Development & Brand Design Works</h2>
         <div class="carousel owl-carousel">
+            
             <div class="card">
                 <div class="box">
-                    <video width="380" height="300" controls autoplay>
-                        <source src="images/cmos_app.mp4" type = "video/mp4">
-                    </video>
-                    <div class="text">Develop the Andriod application for CMOS Processor </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="box">
-                    <video width="380" height="300" controls autoplay>
-                        <source src="images/ecatcher.mp4" type = "video/mp4">
-                    </video>
+                        <img src="images/ecatcher.png" alt="Ecatcher">
                     <div class="text">Develop the Andriod application clone for Ecatcher App </div>
                 </div>
             </div>
             <div class="card">
                 <div class="box">
-                    <video width="380" height="300" controls autoplay>
-                        <source src="images/SIS.mp4" type = "video/mp4">
-                    </video>
+                        <img src="images/SIS.png" alt="SIS">
                     <div class="text">Webpage Developed Using HTML and css For Student Information System </div>
                 </div>
             </div>
             <div class="card">
                 <div class="box">
-                    <img src="images/STP.jpeg" alt="">
+                    <img src="images/STP.jpeg" alt="STP">
                     <div class="text">Sewage Treatment Plant Project complete using Viewon</div>
                     </div>
             </div>
             <div class="card">
                 <div class="box">
-                    <img src="images/website_launch.jpeg" alt="">
+                    <img src="images/website_launch.jpeg" alt="Nutrikernals">
                     <div class="text">Nutrikernals Webpage Lunch. Site created using the GoDaddy </div>
                 </div>
             </div>
 
             <div class="card">
                 <div class="box">
-                    <img src="images/table.jpg" alt="">
+                    <img src="images/table.jpg" alt="Viewon">
                     <div class="text">Data Monitoring For AC using Viewon</div>
                 </div>
             </div>
 
             <div class="card">
                 <div class="box">
-                    <img src="images/product.jpeg" alt="">
+                    <img src="images/product.jpeg" alt="product">
                     <div class="text">Dashboard For Product Selection using Viewon</div>
                 </div>
             </div>
 
             <div class="card">
                 <div class="box">
-                    <img src="images/OEE.jpeg" alt="">
+                    <img src="images/OEE.jpeg" alt="EMS">
                     <div class="text">Dashboard For EMS using Viewon </div>
                 </div>
             </div>
 
             <div class="card">
                 <div class="box">
-                    <img src="images/oee_1.jpeg" alt="">
+                    <img src="images/oee_1.jpeg" alt="DATA">
                     <div class="text">Dashboard For Historical Data log using viewon</div>
                 </div>
             </div>
 
             <div class="card">
                 <div class="box">
-                    <img src="images/injection.jpeg" alt="">
+                    <img src="images/injection.jpeg" alt="Injection Moulding">
                     <div class="text">Dashboard For Injection Moulding Machine using viewon </div>
                 </div>
             </div>
 
             <div class="card">
                 <div class="box">
-                    <img src="images/flexy.jpeg" alt="">
+                    <img src="images/flexy.jpeg" alt="COsy">
                     <div class="text">Dashboard For COSY monitoring using viewon</div>
                 </div>
             </div>
             <div class="card">
                 <div class="box">
-                    <img src="images/fan.jpg" alt="">
+                    <img src="images/fan.jpg" alt="BMS">
                     <div class="text">Dashboard For BMS monitoring using viewon</div>
                 </div>
             </div>
             <div class="card">
                 <div class="box">
-                    <img src="images/cosy.jpeg" alt="">
+                    <img src="images/cosy.jpeg" alt="Flexy">
                     <div class="text">Dashboard For Flexy Production using viewon</div>
                 </div>
             </div>
             <div class="card">
                 <div class="box">
-                    <img src="images/Beauty_2.png" alt="">
+                    <img src="images/Beauty_2.png" alt="Beauty">
                     <div class="text">beauty parlour brochure</div>
                 </div>
             </div>
             <div class="card">
                 <div class="box">
-                    <img src="images/Beauty_1.png" alt="">
+                    <img src="images/Beauty_1.png" alt="parlour">
                     <div class="text">beauty parlour brochure </div>
                 </div>
             </div>
             <div class="card">
                 <div class="box">
-                    <img src="images/api.jpg" alt="">
+                    <img src="images/api.jpg" alt="M2web">
                     <div class="text">Using M2web APi Control the BMS System using Viewon</div>
                 </div>
             </div>
             <div class="card">
                 <div class="box">
-                    <img src="images/ac_mode.jpg" alt="">
+                    <img src="images/ac_mode.jpg" alt="AC">
                     <div class="text">Dashboard For AC Monitoring System using viewon</div>
                 </div>
             </div>
             <div class="card">
                 <div class="box">
-                    <video width="380" height="300" controls autoplay>
-                        <source src="images/cmos.mp4" type = "video/mp4">
-                    </video>
+                        <img src="images/cmos.png" alt="cmos">
                     <div class="text">Webpage Develop for CMOS Processor using HTML,CSS and JS</div>
                 </div>
             </div>
 
             <div class="card">
                 <div class="box">
-                    <video width="380" height="300" controls autoplay>
-                        <source src="images/spotify.mp4" type = "video/mp4">
-                    </video>
+                        <img src="images/spotify.png" alt="spotify">
                     <div class="text">Screen Developed Using FIGMA For Spotify</div>
                 </div>
             </div>
             <div class="card">
                 <div class="box">
-                    <video width="380" height="300" controls autoplay>
-                        <source src="images/online.mp4" type = "video/mp4">
-                    </video>
+                        <img src="images/online.png" alt="online">
                     <div class="text">Screen Developed Using FIGMA For online recruitment system</div>
                 </div>
             </div>
-            <div class="card">
+           
+             <div class="card">
                 <div class="box">
-                    <video width="380" height="300" controls autoplay>
-                        <source src="images/beauty_parlour.mp4" type = "video/mp4">
-                    </video>
-                    <div class="text">Screen Developed Using Googlesites For Beauty Parlour </div>
+                        <img src="images/Ambulance_Hospital pre booking.png" alt="Ambulance">
+                    <div class="text">Book your ambulance & hospital slot instantly – track every move from pickup to discharge, all in one place. </div>
                 </div>
             </div>
+             <div class="card">
+                <div class="box">
+                        <img src="images/IOT Based Smart Ambulance System - IoT ResQ.png" alt="IoT">
+                    <div class="text">🚑 IoT ResQ – An IoT-Based Smart Ambulance System for instant accident detection, auto-booking, hospital room allocation, doctor alert, and real-time patient record tracking via centralized admin.
+                  </div>
+                </div>
+            </div>
+             <div class="card">
+                <div class="box">
+                        <img src="images/Hasle_Site - Local Business Services - Google Chrome 2025-06-10 02-19-28.png" alt="local">
+                    <div class="text">💼 Promote your local business online with hassle-free digital marketing, website setup, and Google visibility – all in one place. </div>
+                </div>
+            </div>
+             <div class="card">
+                <div class="box">
+                        <img src="images/school management system.png" alt="SIS">
+                    <div class="text">🎓 School Management System – A Python-based application to add, manage, and store student records efficiently in one place. </div>
+                </div>
+            </div>
+
+           
+               <div class="card">
+                <div class="box">
+                    <img src="images/Brochureee.png" alt="ALKJ ">
+                    <div class="text">💼 ALKJ Technologies – We build websites, boost local brands through digital marketing, and deliver smart tech solutions for growing businesses.</div>
+                </div>
+            </div>
+
+             <div class="card">
+                <div class="box">
+                    <img src="images/webniar_poster.png" alt="Brochure">
+                    <div class="text">🎓 Join ALKJ Technologies' free live webinar and kickstart your career</div>
+                </div>
+            </div>
+
+             <div class="card">
+                <div class="box">
+                    <img src="images/website brochure.png" alt="Website ">
+                    <div class="text">💻 Launch your custom website for just ₹749 with ALKJ Technologies – professional design, mobile-friendly & ready in 3 days!</div>
+                </div>
+            </div>
+
+             <div class="card">
+                <div class="box">
+                    <img src="images/final.png" alt="Amman">
+                    <div class="text">🛢️ Explore high-performance oils and lubricants from Amman Lubrication – engineered for lasting protection and smooth performance.
+                </div>
+                </div>
+            </div>
+
+              <div class="card">
+                <div class="box">
+                    <img src="images/AMMAN LUBRICANTS (1).png" alt="brochure">
+                    <div class="text">🛢️ Amman Lubrication products are used in automotive, industrial, and agricultural machinery to ensure smooth operation and long-lasting performance.</div>
+                </div>
+            </div>
+
+              <div class="card">
+                <div class="box">
+                    <img src="images/Amman_Brochure3.png" alt="brochure">
+                    <div class="text">🔧 Trusted by mechanics, industries, and fleet owners who demand reliable, high-performance lubrication every time</div>
+                </div>
+            </div>
+
+             <div class="card">
+                <div class="box">
+                    <img src="images/ac_mode.jpg" alt="AC">
+                    <div class="text">Dashboard For AC Monitoring System using viewon</div>
+                </div>
+            </div>
+
             <div class="card">
                 <div class="box">
-                    <video width="380" height="300" controls autoplay>
-                        <source src="images/Garbage_monitoring.mp4" type = "video/mp4">
-                    </video>
+                        <img src="images/Garbage_monitoring.png" alt="Garbage_monitoring">
                     <div class="text">Webpage Developed Using HTML,css,js,mysql and PHP For Garbage Monitoring System </div>
                 </div>
             </div>
-
-
-
         </div>
     </div>
 </section>
-
-    
- <!-- contact section start -->
- <section class="contact" id="contact">
-    <div class="max-width">
-        <h2 class="title">Contact me</h2>
-        <div class="contact-content">
-            <div class="column left">
-                <div class="text">Get in Touch</div>
-                <p>I am always looking for new opportunities to learn and grow. If you have any questions about my work or would like to discuss a potential collaboration, please do not hesitate to contact me.
-                </p>
-                <div class="icons">
-                    <div class="row">
-                        <i class="fas fa-user"></i>
-                        <div class="info">
-                            <div class="head">Name</div>
-                            <div class="sub-title">Pavithra Saravana
-                                Perumal</div>
+   <!-- contact section start -->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contact me</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Get in Touch</div>
+                    <p>
+                        I am always open to exploring new opportunities in HR and business analysis. If you have a project, a question, or would just like to connect, please feel free to reach out!
+                    </p>
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fas fa-user"></i>
+                            <div class="info">
+                                <div class="head">Name</div>
+                                <div class="sub-title">Pavithra Saravana Perumal</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div class="info">
-                            <div class="head">Address</div>
-                            <div class="sub-title">No,35 kambar street,
-                                j.b.nagar,Avadi, chennai-109</div>
+                        <div class="row">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info">
+                                <div class="head">Address</div>
+                                <div class="sub-title"> Kambar Street, J.B.Nagar, Avadi, Chennai-109</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <i class="fas fa-envelope"></i>
-                        <div class="info">
-                            <div class="head">Email</div>
-                            <div class="sub-title">pavithra20010121@gmail.com</div>
+                        <div class="row">
+                            <i class="fas fa-envelope"></i>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sub-title">pavithra20010121@gmail.com</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fab fa-linkedin"></i>
+                            <div class="info">
+                                <div class="head">LinkedIn</div>
+                                <div class="sub-title">
+                                    <a href="https://www.linkedin.com/in/pavithra-saravana-perumal-9a3969170" target="_blank">linkedin.com/in/pavithra-saravana-perumal-9a3969170</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="column right">
-                <div class="text">Message me</div>
-                <form action="#">
-                    <div class="fields">
-                        <div class="field name">
-                            <input type="text" placeholder="Name" required>
+                <div class="column right">
+                    <div class="text">Message me</div>
+                    <!-- Formspree integration to send to your email -->
+                    <form action="https://formspree.io/f/xgvyjgza" method="POST">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" name="name" placeholder="Name" required>
+                            </div>
+                            <div class="field email">
+                                <input type="email" name="email" placeholder="Email" required>
+                            </div>
                         </div>
-                        <div class="field email">
-                            <input type="email" placeholder="Email" required>
+                        <div class="field">
+                            <input type="text" name="subject" placeholder="Subject" required>
                         </div>
-                    </div>
-                    <div class="field">
-                        <input type="text" placeholder="Subject" required>
-                    </div>
-                    <div class="field textarea">
-                        <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
-                    </div>
-                    <div class="button-area">
-                        <button type="submit">Send message</button>
-                    </div>
-                </form>
+                        <div class="field textarea">
+                            <textarea name="message" cols="30" rows="10" placeholder="Message.." required></textarea>
+                        </div>
+                        <div class="button-area">
+                            <button type="submit">Send message</button>
+                        </div>
+                    </form>
+                    <!-- End Formspree integration -->
+                </div>
             </div>
         </div>
-    </div>
-
-
-</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    </section>
 
     <!-- footer section start -->
     <footer>
-        <span>Created By <a href="https://www.linkedin.com/in/pavithra-saravana-perumal-9a3969170">pavi</a> | <span class="far fa-copyright"></span> 2023 All rights reserved.</span>
+        <span>Created By <a href="https://www.linkedin.com/in/pavithra-saravana-perumal-9a3969170">Pavi</a> | <span class="far fa-copyright"></span> 2025 All rights reserved.</span>
     </footer>
-
     <script src="script.js"></script>
 </body>
 </html>

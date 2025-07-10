@@ -1,5 +1,8 @@
+/* ...Keep all your previous style code... */
+
 /*  import google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
 
 *{
     margin: 0;
@@ -778,3 +781,27 @@ footer span a:hover{
         line-height: 38px;
     }
 }
+
+
+/* Add or update the following for new bars/classes */
+.skills-content .right .IOT::before {
+    width: 95%;
+    background: crimson;
+}
+.skills-content .right .html::before {
+    width: 90%;
+    background: crimson;
+}
+.skills-content .right .ms::before {
+    width: 90%;
+    background: crimson;
+}
+.skills-content .right .sqljava::before {
+    width: 80%;
+    background: crimson;
+}
+.skills-content .right .brochure::before {
+    width: 90%;
+    background: crimson;
+}
+/* Existing styles remain unchanged below */
